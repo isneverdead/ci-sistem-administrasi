@@ -15,8 +15,8 @@
         w-full
         h-screen
         px-5
-        py-20
-        xs:py-36
+        py-16
+        xs:py-32
         lg:p-20
         items-center
         justify-center
@@ -42,16 +42,17 @@
             w-full
             items-center
             md:w-1/2
-            py-5
+            py-2
+            xs:py-5
             px-5
             md:px-20
             bg-white
           "
         >
-          <div class="w-full h-full flex flex-col py-10 justify-between">
+          <div class="w-full h-full flex flex-col py-5 justify-between">
             <form action="" method="post">
               <h1 class="font-semibold text-gray-800 text-6xl mb-5 font-sans">
-                Login
+                Register
               </h1>
               <label class="my-5 font-sans font-semibold text-sm" for="email"
                 >Email</label
@@ -76,8 +77,8 @@
                   name="email"
                 />
               </div>
-              <label class="my-5 font-sans font-semibold text-sm" for="password"
-                >Password</label
+              <label class="my-5 font-sans font-semibold text-sm" for="name"
+                >Nama</label
               >
               <div
                 class="
@@ -92,12 +93,61 @@
                 "
               >
                 <input
-                  id="password"
+                  id="name"
                   class="w-full focus:outline-none"
-                  type="password"
-                  placeholder="Masukkan Password"
-                  name="email"
+                  type="text"
+                  placeholder="Masukkan Nama"
+                  name="name"
                 />
+              </div>
+              <label class="my-5 font-sans font-semibold text-sm" for="password"
+                >Password</label
+              >
+              <div class="w-full flex flex-row justify-between">
+                <!-- password 1 -->
+                <div
+                  class="
+                    w-full
+                    overflow-hidden
+                    rounded-lg
+                    border border-gray-600
+                    px-2
+                    py-1
+                    mb-5
+                    mt-2
+                  "
+                >
+                  <input
+                    id="password"
+                    class="w-full focus:outline-none"
+                    type="password"
+                    placeholder="Masukkan Password"
+                    name="email"
+                  />
+                </div>
+                <!-- spacer -->
+                <div class="w-10"></div>
+                <!-- password 2 -->
+                <div
+                  class="
+                    w-full
+                    overflow-hidden
+                    rounded-lg
+                    border border-gray-600
+                    px-2
+                    py-1
+                    mb-5
+                    mt-2
+                  "
+                >
+                  <input
+                    id="password-confirm"
+                    class="w-full focus:outline-none"
+                    type="password-confirm"
+                    placeholder="Konfirmasi Password"
+                    name="email"
+                  />
+                </div>
               </div>
               <!-- button, forgot password section  -->
               <div class="flex flex-row items-center justify-between">
@@ -115,25 +165,12 @@
                     text-white
                   "
                 >
-                  Login
+                  Register
                 </button>
-                <span
-                  class="
-                    font-sans
-                    text-sm text-gray-800
-                    font-semibold
-                    cursor-pointer
-                    hover:underline
-                    transition
-                    duration-300
-                    ease-in-out
-                  "
-                  >Lupa password?</span
-                >
               </div>
             </form>
             <div class="flex flex-row w-full justify-center">
-              <a href="<?= base_url('/register')?>">
+              <a href="<?= base_url('/login')?>">
                 <span
                   class="
                     font-sans
@@ -141,7 +178,7 @@
                     font-semibold
                     cursor-pointer
                   "
-                  >Belum punya akun? Daftar
+                  >Sudah punya akun? Masuk
                   <span
                     class="
                       font-sans
@@ -165,7 +202,7 @@
     </div>
   </body>
   <script>
-    document.title = 'Masuk ke website'
+    document.title = 'Daftar ke website'
     // console.log(document.title)
   </script>
 </html>
