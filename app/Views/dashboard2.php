@@ -141,7 +141,7 @@
                       ></path>
                     </svg>
                   </span>
-                  <span class="mx-4 text-sm font-normal"> Projects </span>
+                  <span class="mx-4 text-sm font-normal"> Daftar Anggota </span>
                 </a>
                 <a
                   class="

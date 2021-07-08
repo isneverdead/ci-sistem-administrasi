@@ -70,7 +70,7 @@
 </head>
 <body>
 	<div class="wrap">
-		<h1>404 - File Not Found</h1>
+		<h1>404 - File Not Found. Redirecting...</h1>
 
 		<p>
 			<?php if (! empty($message) && $message !== '(null)') : ?>
@@ -80,5 +80,14 @@
 			<?php endif ?>
 		</p>
 	</div>
+	<script>
+		var user = <?php echo json_encode(session()->has('loggedUser'), JSON_HEX_TAG); ?>; 
+	  function redirect() {
+		setTimeout(function(){ 
+				window.location.href = "/";
+			},3000);	
+		}
+		redirect()
+	</script>
 </body>
 </html>
