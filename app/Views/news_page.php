@@ -48,7 +48,8 @@
       <div class="w-full flex flex-row px-5 bg-green-200 rounded-lg py-2 justify-between shadow-lg items-center">
       <a href="<?= base_url('/')?>">
 
-      <h1 class="font-sans font-bold text-xl text-gray-800">Logo</h1>
+      <!-- <h1 class="font-sans font-bold text-xl text-gray-800">Logo</h1> -->
+      <img class="w-10" src="<?= base_url('/assets/images/logo.png')?>" alt="logo" />
       </a>
         <div class="flex flex-row items-center">
           <a href="<?= base_url('/')?>">

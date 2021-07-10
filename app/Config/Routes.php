@@ -111,6 +111,24 @@ $routes->group('', ['filter' => 'AuthFilter'], function ($routes) {
 	$routes->get('/dashboard/keuangan/edit/(:any)', 'Keuangan::edit/$1');
 	$routes->post('/dashboard/keuangan/edit/(:any)/save', 'Keuangan::edit_save/$1');
 	$routes->get('/dashboard/keuangan/delete/(:any)', 'Keuangan::delete/$1');
+
+	// pelajar routes
+	$routes->get('/pelajar', 'Pelajar::index');
+	$routes->get('/dashboard/pelajar', 'Pelajar::index');
+	$routes->get('/dashboard/pelajar/add', 'Pelajar::add');
+	$routes->post('/dashboard/pelajar/add/save', 'Pelajar::add_save');
+	$routes->get('/dashboard/pelajar/edit/(:any)', 'Pelajar::edit/$1');
+	$routes->post('/dashboard/pelajar/edit/(:any)/save', 'Pelajar::edit_save/$1');
+	$routes->get('/dashboard/pelajar/delete/(:any)', 'Pelajar::delete/$1');
+
+	// profile routes
+	$routes->get('/profile', 'Profile::index');
+	$routes->get('/dashboard/profile', 'Profile::index');
+	$routes->get('/dashboard/profile/add', 'Profile::add');
+	$routes->post('/dashboard/profile/add/save', 'Profile::add_save');
+	$routes->get('/dashboard/profile/edit/(:any)', 'Profile::edit/$1');
+	$routes->post('/dashboard/profile/edit/(:any)/save', 'Profile::edit_save/$1');
+	$routes->get('/dashboard/profile/delete/(:any)', 'Profile::delete/$1');
 });
 // filtering, if user already logged in, they can't acces login and register page
 $routes->group('', ['filter' => 'AlreadyLoggedInFilter'], function ($routes) {

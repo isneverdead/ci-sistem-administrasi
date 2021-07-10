@@ -10,7 +10,8 @@
   <body>
     <div class="w-full h-screen flex flex-col px-4 pt-4 bg-gray-100">
       <div class="w-full flex flex-row px-5 bg-green-200 rounded-lg py-2 justify-between shadow-lg items-center">
-        <h1 class="font-sans font-bold text-xl text-gray-800">Logo</h1>
+        <!-- <h1 class="font-sans font-bold text-xl text-gray-800">Logo</h1> -->
+        <img class="w-10" src="<?= base_url('/assets/images/logo.png')?>" alt="logo" />
         <div class="flex flex-row items-center">
           <a href="<?= base_url('/berita')?>">
             <button
@@ -112,13 +113,27 @@
       </div>
       <!-- end nav -->
       <div
-        class="w-full h-full my-5 px-4 rounded-lg shadow-xl bg-white md:px-20 flex flex-col justify-center items-center"
+        class="
+          w-full
+          h-full
+          relative
+          my-5
+          rounded-lg
+          shadow-xl
+          bg-white
+          flex flex-col
+          justify-center
+          items-center
+          overflow-hidden
+        "
       >
-        <div class="w-full flex flex-col px-5 py-3">
-          <h1 class="md:w-8/12 font-bold font-sans text-4xl lg:text-6xl text-gray-800">
+        <img class="w-full" src="<?= base_url('/assets/images/anggota.png')?>" alt="anggota" />
+
+        <div class="w-full absolute left-0 top-0 right-0 bottom-0 flex flex-col px-5 py-3 flex justify-center">
+          <h1 class="md:w-8/12 font-bold font-sans text-4xl lg:text-6xl text-white">
             Sistem Informasi data mahasiswa Papua
           </h1>
-          <h3 class="font-bold font-sans text-xl md:text-2xl mt-4 text-gray-800">kabupaten Lanni jaya berbasis web</h3>
+          <h3 class="font-bold font-sans text-xl md:text-2xl mt-4 text-white">Asal Kabupaten Lani Jaya</h3>
         </div>
       </div>
     </div>

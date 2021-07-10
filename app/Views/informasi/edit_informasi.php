@@ -34,7 +34,8 @@
         <h1 class="font-sans text-md md:text-xl font-semibold text-gray-800">Jumlah</h1>
       </div> -->
       <div class="w-full overflow-hidden rounded-lg px-2 py-1">
-      <textarea id="description" name="description" rows="4" cols="50"/>
+      <textarea class="w-full focus:outline-none" value="<?= $berita['description'] ?>"  id="description" name="description" rows="10" ><?= $berita['description'] ?></textarea>
+
         <!-- <input id="description" class="w-full focus:outline-none" type="textarea" placeholder="Masukkan berita" name="description" value="<?= $berita['description']  ?>" /> -->
       </div>
     </div>
